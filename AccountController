@@ -1,0 +1,5 @@
+public class AccountController {
+    public static List<account>  getAccountList(){
+        return [SELECT Id, Name,Phone,Industry, Rating FROM Account order by createddate desc LIMIT 10];
+        system.debug();
+    }
